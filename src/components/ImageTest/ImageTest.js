@@ -4,11 +4,10 @@ import styles from './ImageTest.css';
 import withStyles from '../../decorators/withStyles';
 //import ParseComponent from 'parse-react';
 
-import {Parse} from 'parse/node';
+import {Parse} from 'parse';
 import ParseReact from 'parse-react';
 var ParseComponent = ParseReact.Component(React);
 
-@withStyles(styles)
 class ImageTest extends ParseComponent {
 
     static propTypes = {
@@ -24,7 +23,7 @@ class ImageTest extends ParseComponent {
 
     observe() {
         return {
-            images: new Parse.Query('User')
+            images: new Parse.Query('Image')
         };
     }
 
