@@ -18,7 +18,6 @@ class ContactPage extends Component {
       <div className="ContactPage">
         <div className="ContactPage-container">
           <h1>{title}</h1>
-          <p>...</p>
         </div>
       </div>
     );
